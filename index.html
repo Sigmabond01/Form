@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="head">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    </div>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+    <fieldset>
+      <div class="names">
+      <label id="name-label">Enter your name:<input id="name" type="text" placeholder="name" required></label>
+      </div>
+      <div class="names">
+      <label id="email-label">Enter your email:<input id="email" type="email" placeholder="email" required></label>
+      </div>
+      <div class="no">
+      <label id="number-label">Enter age: <input id="number" name="number" type="number" placeholder="age" required min="13" max="55" /></label>
+      </div>
+      <label for="opts">How did you hear about us?
+        <select id="dropdown" name="opts">
+          <option value="">Select one</option>
+          <option value="1">Instagram</option>
+          <option value="2">Youtube</option>
+          <option value="3">News</option>
+          </select>
+          </label>
+          <div class="mend">
+          <label for="rec">Would you recommend TOP to a friend? <input type="radio" value="yes" name="one">Yes
+          <input type="radio" value="no" name="one">No
+          </label>
+          <div class="feat">
+            <label for="feat">What is your favourite feature? <input type="checkbox" name="two" value="pro">Projects
+            <input type="checkbox" name="two" value="comm">Community
+            <input type="checkbox" name="two" value="co">Lessons
+            <label for="textarea">Any comments?
+              <textarea></textarea>
+              <button id="submit" type="submit">Submit
+
